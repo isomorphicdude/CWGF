@@ -1,0 +1,6 @@
+name: "ldps"
+n_particles: 1
+obs_weight: 1.0
+cfg_scale: 1.2
+lr_z: 1.0
+num_diffusion_steps: 500

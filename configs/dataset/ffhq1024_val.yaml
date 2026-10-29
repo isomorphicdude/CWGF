@@ -1,0 +1,8 @@
+name: "FFHQ_1024x1024"
+root: "data/ffhq1024_val"
+split: "val"
+image_size: 1024
+channels: 3
+transform: "default"
+subset: 1200
+use_lmdb: true

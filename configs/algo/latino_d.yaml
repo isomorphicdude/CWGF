@@ -1,0 +1,8 @@
+name: "latino_d"
+n_particles: 1
+cfg_scale: 1.0
+num_diffusion_steps: 8
+sigma_y: ${exp.sigma_x0}
+prox_eps: 1e-6
+init_method: "none"
+reuse_prior_noise: false

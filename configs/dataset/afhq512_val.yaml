@@ -1,0 +1,9 @@
+# Copyright (c) 2023, NVIDIA CORPORATION.  All rights reserved
+
+name: "AFHQ_512x512"
+root: "data/afhq512-catdog-val"
+split: "val"
+image_size: 512
+channels: 3
+transform: "default"
+subset: 1200

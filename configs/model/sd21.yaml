@@ -1,0 +1,9 @@
+# model config for stable diffusion 2.1
+name: sd21
+H: 64
+W: 64
+C: 4
+output_h: 512
+output_w: 512
+output_c: 3
+use_fp16: false

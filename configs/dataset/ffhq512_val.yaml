@@ -1,0 +1,10 @@
+# Copyright (c) 2023, NVIDIA CORPORATION.  All rights reserved
+
+name: "FFHQ_512x512"
+root: "data/ffhq512_val"
+split: "val"
+image_size: 512
+channels: 3
+transform: "default"
+subset: 1200
+use_lmdb: true

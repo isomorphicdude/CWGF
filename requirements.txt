@@ -1,0 +1,26 @@
+# Tested with Python 3.11. For the torch CUDA build matching your driver, see the README.
+torch==2.14.1
+torchvision==0.29.1
+diffusers==0.36.0
+transformers==4.57.6
+peft==0.21.2
+accelerate==1.15.0
+huggingface-hub==0.36.2
+safetensors==0.8.0
+deepinv==0.3.7
+hydra-core==1.3.8
+omegaconf==2.3.1
+numpy==2.4.6
+scipy==1.17.1
+pandas==3.1.0
+pillow==13.0.0
+lmdb==3.0.0
+lpips==0.1.4
+torchmetrics==1.9.0
+torch-fidelity==0.4.0
+kornia==0.9.0
+# OpenAI CLIP (TReg baseline); it imports pkg_resources, which setuptools >= 82 no longer ships
+openai-clip==1.0.1
+setuptools==81.0
+wandb==0.25.1
+click==8.5.0

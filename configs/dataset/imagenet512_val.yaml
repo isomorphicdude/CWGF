@@ -1,0 +1,9 @@
+# Copyright (c) 2023, NVIDIA CORPORATION.  All rights reserved
+
+name: "ImageNet_512x512"
+root: "data/imagenet512_val/"
+split: "val"
+image_size: 512
+channels: 3
+transform: "default"
+subset: "data/ctest1k.csv" # 1k-image evaluation subset (1-based indices into the val LMDB)

@@ -1,0 +1,18 @@
+name: "treg"
+n_particles: 1
+obs_weight: 1.0
+cfg_scale: 4.0
+num_diffusion_steps: 200
+
+# keep false in this replication
+use_DPS: false
+
+init_method: "none"
+cg_lamb: 1e-4
+cg_iters: 5
+cg_eps: 1e-4
+cg_damping: 0.0
+
+use_an: false
+an_lr: 8e-4
+an_steps: 10

@@ -1,0 +1,9 @@
+# model config for stable diffusion XL LCM
+name: sdxllora
+H: 128
+W: 128
+C: 4
+output_h: 1024
+output_w: 1024
+output_c: 3
+use_fp16: true

@@ -1,0 +1,6 @@
+name: "MSCOCO_2017_val"
+root: "data/ms-coco-val-2017/"
+split: "val"
+image_size: 512
+channels: 3
+transform: "default"

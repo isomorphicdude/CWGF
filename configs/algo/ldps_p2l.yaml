@@ -1,0 +1,20 @@
+name: "ldps_p2l"
+n_particles: 1
+obs_weight: 1.0
+cfg_scale: 1.2
+
+lr_z: 1.0
+lr_z_mult: 0.0
+num_diffusion_steps: 999
+
+prompt_opt_steps: 5
+prompt_lr: 1e-4
+latent_lr: 0.05
+latent_lr_mult: 0.0
+z_update: "gd"
+adam_beta1: 0.9
+adam_beta2: 0.999
+
+prox_every: 4
+prox_phase: 0
+prox_gamma: 1.0

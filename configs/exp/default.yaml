@@ -1,0 +1,62 @@
+# Copyright (c) 2023, NVIDIA CORPORATION.  All rights reserved
+
+root: "_exp/"
+load_img_id: False
+save_evolution: True
+save_every: 100
+evol_path: "evol"
+output_path: "output"
+save_ori: False
+ori_path: "ground_truth"
+save_deg: True
+deg_path: "deg"
+ckpt_root: "ckpts"
+
+overwrite: True
+
+# experimental settings
+
+# degradation settings
+use_dinv: false
+sigma_x0: 0.01
+deg: 'inp_large_box'
+# gaussian deblur
+blur_sigma: 3.0 # 6.0 for 1024, 3.0 for 512
+blur_window: 61
+# jpeg
+sigma_pre: 0.05
+# inpainting
+mask_size: 256
+
+# diffusion settings
+num_steps: 200
+start_step: 1000
+end_step: 0
+logfreq: 200
+max_num_images: 1000
+start_idx: 0
+resume: false
+seed: 1
+get_fid: False
+get_kid: false
+kid_subsets: 100
+kid_subset_size: 1000
+kid_batch_size: 10
+prompt: "A photo of a face."
+
+# If set, SD weights are loaded from:
+#   ${sd_local_root}/local--<repo_id with / replaced by -->
+# e.g.
+#   ${sd_local_root}/local--runwayml--stable-diffusion-v1-5
+sd_local_root: null
+# Weights & Biases logging (run `wandb login` first, or set WANDB_API_KEY).
+use_wandb: False
+log_img: 0 # 0 for no logging, >0 for logging every log_img steps
+name: "cwgf"  # wandb project name
+entity: null  # wandb entity (user or team); null uses your default entity or $WANDB_ENTITY
+
+# evaluation
+use_single: true # use single image for FID in multi-particle setting
+# lpips_model: "vgg" # "vgg" or "alex"
+
+device: "cuda"
